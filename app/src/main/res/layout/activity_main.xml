@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="+2 POINTS"
         android:textStyle="bold"
+        android:onClick="increment2PtrB"
         app:layout_constraintBaseline_toBaselineOf="@+id/increment2Ptr_A"
         app:layout_constraintEnd_toEndOf="@+id/incrementPtr_B"
         app:layout_constraintStart_toStartOf="@+id/incrementPtr_B" />
@@ -84,6 +85,7 @@
         android:layout_marginTop="24dp"
         android:text="+3 POINTS"
         android:textStyle="bold"
+        android:onClick="increment3PtrA"
         app:layout_constraintEnd_toEndOf="@+id/increment2Ptr_A"
         app:layout_constraintStart_toStartOf="@+id/increment2Ptr_A"
         app:layout_constraintTop_toBottomOf="@+id/textView_TeamA_Score" />
@@ -95,6 +97,7 @@
         android:layout_marginTop="8dp"
         android:text="+2 POINTS"
         android:textStyle="bold"
+        android:onClick="increment2PtrA"
         app:layout_constraintEnd_toEndOf="@+id/incrementPtr_A"
         app:layout_constraintStart_toStartOf="@+id/incrementPtr_A"
         app:layout_constraintTop_toBottomOf="@+id/increment3Ptr_A" />
@@ -106,6 +109,7 @@
         android:layout_marginTop="8dp"
         android:text="FREE THROW"
         android:textStyle="bold"
+        android:onClick="incrementPtrA"
         app:layout_constraintEnd_toStartOf="@+id/textView_divide"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/increment2Ptr_A" />
@@ -116,6 +120,7 @@
         android:layout_height="wrap_content"
         android:text="+3 POINTS"
         android:textStyle="bold"
+        android:onClick="increment3PtrB"
         app:layout_constraintBaseline_toBaselineOf="@+id/increment3Ptr_A"
         app:layout_constraintEnd_toEndOf="@+id/increment2Ptr_B"
         app:layout_constraintStart_toStartOf="@+id/increment2Ptr_B" />
@@ -126,6 +131,7 @@
         android:layout_height="wrap_content"
         android:text="FREE THROW"
         android:textStyle="bold"
+        android:onClick="incrementPtrB"
         app:layout_constraintBaseline_toBaselineOf="@+id/incrementPtr_A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView_divide" />
