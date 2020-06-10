@@ -16,6 +16,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    /**
+     * This function adds three points on a three pointer for TeamA
+     */
+    public void reset(View view){
+        TextView teamA_TextView = (TextView) findViewById(R.id.textView_TeamA_Score);
+        TextView teamB_TextView = (TextView) findViewById(R.id.textView_TeamB_Score);
+        teamA_TextView.setText(""+0);
+        teamB_TextView.setText(""+0);
+    }
 
     /**
      * This function adds three points on a three pointer for TeamA
