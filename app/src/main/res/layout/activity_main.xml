@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96EDECEC"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/increment2Ptr_B"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="+2 POINTS"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/increment2Ptr_A"
+        app:layout_constraintEnd_toEndOf="@+id/incrementPtr_B"
+        app:layout_constraintStart_toStartOf="@+id/incrementPtr_B" />
+
+    <TextView
+        android:id="@+id/textView_divide"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="#B3AFAF"
+        app:layout_constraintBottom_toBottomOf="@+id/incrementPtr_A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_TeamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Team A"
+        android:textColor="#616161"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_TeamA_Score"
+        app:layout_constraintStart_toStartOf="@+id/textView_TeamA_Score"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_TeamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Team B"
+        android:textColor="#616161"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_TeamA"
+        app:layout_constraintEnd_toEndOf="@+id/textView_TeamB_Score"
+        app:layout_constraintStart_toStartOf="@+id/textView_TeamB_Score" />
+
+    <TextView
+        android:id="@+id/textView_TeamA_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="0"
+        android:textSize="120sp"
+        app:layout_constraintEnd_toEndOf="@+id/increment3Ptr_A"
+        app:layout_constraintStart_toStartOf="@+id/increment3Ptr_A"
+        app:layout_constraintTop_toBottomOf="@+id/textView_TeamA" />
+
+    <TextView
+        android:id="@+id/textView_TeamB_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="0"
+        android:textSize="120sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_TeamA_Score"
+        app:layout_constraintEnd_toEndOf="@+id/increment3Ptr_B"
+        app:layout_constraintStart_toStartOf="@+id/increment3Ptr_B" />
+
+    <Button
+        android:id="@+id/increment3Ptr_A"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="+3 POINTS"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/increment2Ptr_A"
+        app:layout_constraintStart_toStartOf="@+id/increment2Ptr_A"
+        app:layout_constraintTop_toBottomOf="@+id/textView_TeamA_Score" />
+
+    <Button
+        android:id="@+id/increment2Ptr_A"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="+2 POINTS"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/incrementPtr_A"
+        app:layout_constraintStart_toStartOf="@+id/incrementPtr_A"
+        app:layout_constraintTop_toBottomOf="@+id/increment3Ptr_A" />
+
+    <Button
+        android:id="@+id/incrementPtr_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="FREE THROW"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView_divide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/increment2Ptr_A" />
+
+    <Button
+        android:id="@+id/increment3Ptr_B"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="+3 POINTS"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/increment3Ptr_A"
+        app:layout_constraintEnd_toEndOf="@+id/increment2Ptr_B"
+        app:layout_constraintStart_toStartOf="@+id/increment2Ptr_B" />
+
+    <Button
+        android:id="@+id/incrementPtr_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FREE THROW"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/incrementPtr_A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_divide" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="RESET"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
