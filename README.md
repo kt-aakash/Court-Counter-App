@@ -6,7 +6,9 @@ Feel free to use this for educational purpose
 
 This app runs on devices with Android **KitKat** and above
 
-The apk file can be found in: **app\build\outputs\apk\debug**
+Once you fork the project, the apk file can be found in: **app\build\outputs\apk\debug**
+
+If not found, click the **build** option on the Android Studio and then find it in the above mentiond location  
 
 Download the **apk-debug** file and install it on your android mobile for quick experience
 
