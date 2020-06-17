@@ -22,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
     public void reset(View view){
         TextView teamA_TextView = (TextView) findViewById(R.id.textView_TeamA_Score);
         TextView teamB_TextView = (TextView) findViewById(R.id.textView_TeamB_Score);
-        teamA_TextView.setText(""+0);
+        teamA_score = 0;            // setting the values to 0
+        teamB_score = 0;
+        teamA_TextView.setText(""+0);   // setting views to 0
         teamB_TextView.setText(""+0);
     }
 
